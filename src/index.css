@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --ef-bg: #080607;
+  --ef-surface: #100b0e;
+  --ef-surface-alt: #160d11;
+  --ef-bordeaux: #390d18;
+  --ef-border: #4a1522;
+  --ef-border-muted: rgba(168, 157, 162, 0.22);
+  --ef-primary: #e5092d;
+  --ef-primary-bright: #ff173d;
+  --ef-secondary: #650d20;
+  --ef-text: #f5eff1;
+  --ef-muted: #a89da2;
+  --ef-radius: 12px;
+  --ef-blur: 10px;
+  --ef-surface-opacity: 0.92;
+  --ef-font-scale: 1;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: var(--ef-bg);
+  color: var(--ef-text);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  font-size: calc(15px * var(--ef-font-scale));
+}
+
+.font-calligraphic {
+  font-family: 'Great Vibes', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Gothic Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080607;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #390d18;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #650d20;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

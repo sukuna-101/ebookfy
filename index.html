@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ebookfy — Sua biblioteca. Suas regras.</title>
+    <meta
+      name="description"
+      content="Biblioteca digital e leitor universal 100% local e offline para mangás, manhwas, manhuas, webtoons, HQs, livros e documentos."
+    />
+    <meta property="og:title" content="Ebookfy — Sua biblioteca. Suas regras." />
+    <meta
+      property="og:description"
+      content="Biblioteca digital e leitor universal 100% local e offline para mangás, manhwas, manhuas, webtoons, HQs, livros e documentos."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#080607" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ebookfy" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Great+Vibes&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#080607] text-[#F5EFF1] antialiased selection:bg-[#E5092D]/35 selection:text-white">
+    <div id="root"></div>
+    <noscript>
+      <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#080607;color:#F5EFF1;font-family:sans-serif;padding:24px;text-align:center;">
+        <div style="max-width:480px;border:1px solid #650D20;border-radius:16px;padding:24px;background:#100B0E;">
+          <h1 style="margin:0 0 8px;font-size:24px;">Ebook<span style="color:#E5092D;">fy</span></h1>
+          <p style="color:#A89DA2;font-size:14px;line-height:1.5;">Ative o JavaScript no navegador para executar a biblioteca local Ebookfy.</p>
+        </div>
+      </div>
+    </noscript>
+    <script>
+      window.__ebookfyBooted = false;
+      window.setTimeout(function () {
+        if (!window.__ebookfyBooted) {
+          var root = document.getElementById('root');
+          if (root && !root.hasChildNodes()) {
+            root.innerHTML =
+              '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#080607;color:#F5EFF1;font-family:system-ui,sans-serif;padding:24px;">' +
+              '<div style="max-width:520px;border:1px solid #650D20;border-radius:16px;padding:28px;background:#100B0E;box-shadow:0 0 40px rgba(229,9,45,0.12);">' +
+              '<h1 style="margin:0 0 10px;font-size:26px;">Ebook<span style="color:#E5092D;">fy</span></h1>' +
+              '<p style="color:#A89DA2;font-size:14px;line-height:1.6;margin:0 0 16px;">Você abriu o arquivo <code>index.html</code> diretamente sem o servidor Vite ou sem compilar a pasta <code>dist/</code>. Por isso o navegador não transpila TypeScript/JSX.</p>' +
+              '<div style="background:#080607;border:1px solid #390D18;border-radius:10px;padding:14px;font-family:monospace;font-size:13px;color:#F5EFF1;line-height:1.7;">' +
+              'npm install<br/>npm run dev<br/><span style="color:#A89DA2;"># ou para gerar a versão HTML/JS pronta para Live Preview e GitHub Pages:</span><br/>npm run build' +
+              '</div></div></div>';
+          }
+        }
+      }, 2500);
+    </script>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>

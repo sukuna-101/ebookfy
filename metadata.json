@@ -1,0 +1,6 @@
+{
+  "name": "Ebookfy",
+  "description": "Biblioteca digital e leitor universal 100% local e offline para mangás, manhwas, manhuas, webtoons, HQs, livros e documentos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

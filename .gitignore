@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+dev-dist/
+coverage/
+.playwright-cli/
+.aistudio/
+public/assets/aistudio/
+.DS_Store
+*.log
+.env*
+!.env.example
